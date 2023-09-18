@@ -48,7 +48,7 @@ namespace MinimalApi.Data.Repository
             return true;
         }
 
-        public Student? GetById(Guid id)
+        public Student GetById(Guid id)
         {
             return _dbSet.FirstOrDefault(p => p.Id == id);
         }
